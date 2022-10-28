@@ -1,0 +1,44 @@
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint",
+      "prettier",
+      "sonarjs"
+    ],
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/eslint-recommended",
+      "plugin:@typescript-eslint/recommended"
+    ],
+    "rules": {
+		"sonarjs/no-nested-switch": "warn",
+		"sonarjs/no-gratuitous-expressions": "warn",
+		"sonarjs/no-nested-template-literals": "warn",
+		"sonarjs/no-duplicate-string": "off",
+		"sonarjs/cognitive-complexity": "warn",
+		"sonarjs/no-collection-size-mischeck": "warn",
+		"no-extra-boolean-cast": "off",
+		"no-unused-vars": ["error", { "args": "none", "ignoreRestSiblings": true }],
+		"semi": "error",
+		"no-warning-comments": "warn",
+		"spaced-comment": "error",
+		"brace-style": ["error", "1tbs", { "allowSingleLine": true }],
+		"curly": ["error", "multi-line"],
+		"camelcase": ["error", { "properties": "never" }],
+		"no-multiple-empty-lines": ["error", { "max": 1 }],
+		"no-unexpected-multiline": "error",
+		"eqeqeq": "error",
+		"no-var": "error",
+		"prefer-const": "error",
+        "max-len": ["warn", { "code": 80 }],
+		"prettier/prettier": [
+			"error",
+			{
+				"printWidth": 80,
+				"arrowParens": "always",
+				"singleQuote": true,
+			},
+		],
+     }
+  }
